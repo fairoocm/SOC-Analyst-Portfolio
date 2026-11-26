@@ -1,56 +1,67 @@
 # CyberDefenders – HawkEye
 
-## Lab Information
+## Lab Overview
 
-- **Platform:** CyberDefenders
-- **Lab Name:** HawkEye
-- **Category:** Network Forensics
-- **Difficulty:** Medium
-- **Status:** Completed
-- **Completion Date:** November 21, 2026
+| Detail | Information |
+|---|---|
+| Platform | CyberDefenders |
+| Lab | HawkEye |
+| Category | Network Forensics |
+| Difficulty | Medium |
+| Status | Completed |
+| Completion Date | November 21, 2026 |
 
-## Investigation Overview
+## Scenario
 
 The HawkEye lab focuses on investigating a simulated keylogger data-exfiltration incident.
 
-The objective was to analyse captured network traffic, reconstruct the incident, and identify Indicators of Compromise (IOCs) and stolen credentials.
+The objective is to analyse captured network traffic, reconstruct the incident, and identify Indicators of Compromise (IOCs) and stolen credentials.
 
-## Tools Used
+## Tools and Environment
 
-- **Wireshark:** Network traffic and packet analysis.
-- **CyberChef:** Data analysis and decoding.
-- **Kali Linux:** Investigation environment.
+- **Wireshark** – Network packet inspection and traffic analysis.
+- **CyberChef** – Data analysis and decoding.
+- **Kali Linux** – Investigation environment.
 
-## Investigation Scope
+## Practical Work
 
-The lab involved:
+Completed the HawkEye network forensics challenge using the provided packet capture file, `stealer.pcap`.
 
-- Analysing captured network traffic.
-- Examining communication between network endpoints.
-- Investigating suspicious network activity.
-- Working towards reconstructing the data-exfiltration incident.
-- Identifying relevant IOCs and compromised information.
+The available practical evidence shows:
 
-## Practical Evidence
+- Network traffic captured and inspected using Wireshark.
+- Communication between internal network endpoints.
+- TCP and Kerberos-related traffic in the packet list.
+- Packet-level inspection of the captured traffic.
+- A capture containing 4,003 packets.
 
-A Wireshark screenshot from the completed lab is available.
+## Evidence
 
-The screenshot shows packet analysis of the provided `stealer.pcap` capture, containing 4,003 packets.
+### Wireshark – Network Traffic Analysis
 
-Evidence will be added after reviewing and redacting sensitive packet contents.
+![Wireshark Analysis](wireshark-analysis-redacted.png)
 
-## Key Learning Outcomes
+## Skills Practised
 
-- Gained practical exposure to network forensics.
-- Worked with Wireshark packet analysis.
-- Explored network traffic investigation techniques.
-- Practised using CyberChef for data analysis.
-- Improved understanding of data-exfiltration investigations.
+- Network traffic analysis
+- Packet inspection
+- Network forensics fundamentals
+- Understanding network communication
+- Working with Wireshark
+- Using CyberChef for data analysis
 
-## Conclusion
+## Learning Outcome
 
-Completed the CyberDefenders HawkEye network forensics lab, gaining practical exposure to investigating a simulated keylogger-related data-exfiltration incident.
+This lab provided practical exposure to investigating a simulated keylogger-related data-exfiltration incident through network forensics.
+
+It helped strengthen my understanding of packet analysis and the tools used in Blue Team security investigations.
+
+## Completion
+
+**Successfully completed:** November 21, 2026
+
+**Platform:** CyberDefenders
 
 ---
 
-*This documentation describes my completed lab experience. Specific investigation findings and IOCs have not been reproduced here.*
+*This documentation represents my completed hands-on lab experience. It does not reproduce challenge answers, recovered credentials, or restricted lab data.*
