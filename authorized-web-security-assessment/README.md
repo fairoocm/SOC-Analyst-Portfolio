@@ -1,20 +1,20 @@
-# Authorized Web Security Assessment
+# Authorized Web Application VAPT Assessment
 
 ## Project Overview
 
-This project documents an authorized web security assessment conducted as part of practical cybersecurity learning.
+A practical Web Application Vulnerability Assessment and Penetration Testing (VAPT) case study conducted with written institutional authorization.
 
-The assessment focused on understanding the target website's publicly accessible security configuration, identifying potential security weaknesses, reviewing HTTP security controls, and documenting technical observations with supporting evidence.
+The assessment focused on evaluating publicly accessible web application security configurations, identifying potential weaknesses, reviewing security controls, and documenting evidence-based observations.
 
 ## Assessment Scope
 
-- Public-facing website reconnaissance
-- HTTP and HTTPS configuration analysis
-- HTTP security header inspection
-- TLS certificate and protocol analysis
-- Cookie security attribute review
-- Browser-based security observations
-- Security findings and recommendations
+- Public-facing web application
+- DNS and hosting boundary analysis
+- HTTP and HTTPS configuration
+- Security header inspection
+- Session cookie security attributes
+- Client-side form and CAPTCHA analysis
+- URL routing and response behavior
 
 ## Tools & Technologies
 
@@ -27,26 +27,58 @@ The assessment focused on understanding the target website's publicly accessible
 - WHOIS
 - Firefox Developer Tools
 
-## Assessment Methodology
+## Verified Findings
 
-1. Reconnaissance and information gathering
-2. HTTP and HTTPS configuration inspection
-3. Security header analysis
-4. TLS configuration review
-5. Cookie attribute inspection
-6. Evidence collection and documentation
-7. Security observations and recommendations
+| ID | Finding | Severity |
+|---|---|---|
+| VAPT-01 | Missing HTTP Security Headers | Low |
+| VAPT-02 | Unhardened PHPSESSID Cookie | Low |
+| VAPT-03 | Temporary HTTPS Redirect | Low |
+| VAPT-04 | Client-Side CAPTCHA & No CSRF Token | Low |
+| VAPT-05 | Soft-200 Routing & OG Path Concatenation | Informational |
+| VAPT-06 | Outdated Front-End Library | Informational |
 
-## Evidence & Documentation
+## Positive Security Observations
 
-Supporting terminal outputs, screenshots, technical observations, and the assessment report are organized within this project directory.
+- Valid wildcard TLS certificate.
+- Deprecated TLS 1.1 protocol disabled.
+- Server version information suppressed.
+- Contact form uses HTTPS transport.
 
-## Authorization & Responsible Disclosure
+## Methodology
 
-Testing was conducted with authorization from the relevant institution.
+1. Reconnaissance and information gathering.
+2. DNS and hosting boundary analysis.
+3. HTTP security header inspection.
+4. TLS configuration assessment.
+5. Session cookie analysis.
+6. Browser DOM and client-side form inspection.
+7. Findings documentation and risk classification.
 
-This repository is intended for educational and professional portfolio purposes. Sensitive information, private data, and details that could expose the institution's security posture will not be published without explicit disclosure approval.
+## Testing Limitations
 
-## Disclaimer
+Active scanning was stopped when upstream hosting firewall filtering was observed. Shared hosting infrastructure was treated separately from the in-scope application.
 
-This project documents authorized security testing and observations. Findings are limited to the assessment scope and testing performed. Unverified security controls are not represented as confirmed vulnerabilities.
+No critical or high-severity vulnerabilities were confirmed within the assessment scope.
+
+## Assessment Report
+
+See the complete three-page case study in the `report` directory:
+
+**Web Application VAPT Case Study — LinkedIn Carousel.pdf**
+
+## Authorization & Responsible Testing
+
+Testing was conducted with written institutional authorization.
+
+The assessment followed defined scope boundaries and emphasized responsible testing, operational restraint, and evidence-based reporting.
+
+## Author
+
+**Bilal Fairoos**
+
+Cybersecurity Student | Web Application Security | VAPT | Purple Teaming
+
+GitHub: https://github.com/fairoocm
+
+LinkedIn: https://www.linkedin.com/in/bilal-fairoos-cm-2b5892436
